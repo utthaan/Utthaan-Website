@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
+  <meta name="description" content="Utthaan Fest 2021 is here! Come with us and experience our journey to the cosmos">
+  <meta property="og:title" content="Utthaan'21" />
+  <meta property="og:description"
+    content="Utthaan Fest 2023 is here! Come with us and experience our journey to the cosmos" />
+  <meta property="og:url" content="https://Utthaan.netlify.app/" />
+  <meta property="og:site_name" content="Utthaan" />
+
+  <style type="text/css">
+    .loader-bg {
+      position: fixed;
+      z-index: 99999;
+      background: rgb(19, 18, 18);
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+      overflow: hidden;
+    }
+
+    .loader {
+      position: absolute;
+      top: 45vh;
+      left: 45vw;
+    }
+
+    .loader img {
+      height: 20vh;
+      animation: loader 0.3s linear infinite alternate;
+    }
+
+    @keyframes loader {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-25%);
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as=" style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></noscript>
+    <link rel=" preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    </noscript>
+
+    <link rel="preload" href="./landing_styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="./landing_styles.css">
+    </noscript>
+    <link rel="stylesheet" href="./assets/pointer/pointer.css">
+    <title>Utthaan 2023</title>
+</head>
+
+<body>
+  <div class="loader-bg">
+    <div class="loader"><img src="./assets/preloader.webp" alt="Preloader"></div>
+  </div>
+  <div class="well" id="well">
+    <a href="#top" title="Back to top"><button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button></a>
+    <div class="banner panel" id="top">
+
+      <nav id="nav" data-aos="menu-area" data-aos-anchor-placement="bottom-top">
+        <a title="About" href="#about_anchor">About</a>
+        <!-- <a title="Timeline" href="#timeline_anchor">Timeline</a> -->
+        <a title="Pronites" href="#pronites_anchor">Pronites</a>
+        <!-- <a title="Sponsors" href="#sponsors_anchor">Sponsors</a> -->
+        <a title="Contact" href="#contact_anchor">Contact</a>
+      </nav>
+      <video src="./assets/background1.mp4" loop muted autoplay></video>
+      <div class="overlay"></div>
+      <div class="heading">
+        <h1>Utthaan</h1>
+        <h1>Utthaan</h1>
+        <p>Tecno-Cultural Fest</p>
+        <p>14/02/2023 - 16/02/2023</p>
+
+        <!-- <div class="register-button">
+          <div class="left"></div><a title="Register" href="#">Register !</a>
+          <div class="right"></div>
+        </div> -->
+
+        <!-- //countdown timer -->
+        <div id="countdown">
+          <ul>
+            <li>
+              <div id="days"></div>days
+            </li>
+            <li>
+              <div id="hours"></div>Hours
+            </li>
+            <li>
+              <div id="minutes"></div>Minutes
+            </li>
+            <li>
+              <div id="seconds"></div>Seconds
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="about panel" id="about_anchor">
+
+        <img id="astronaut" alt="astronaut" src="./assets/astronaut.webp">
+
+        <img id="planet" alt="planet" src="./assets/moon.webp">
+
+        <div class="about-box">
+          <h1>About</h1>
+          <p class="about-text"></br>Get ready to blast off into a world of technology and culture at Utthaan, the ultimate techno-cultural fest. Immerse yourself in a galaxy of events and competitions that will challenge and inspire you. Explore the vast expanse of space through our space-themed events and activities. With something for everyone, this fest promises to be an out-of-this-world experience. Stay tuned for more details on the events, competitions and much more, the entire event will be revealing soon.</p>
+        </div>
+      </div>
+
+    <!-- pronites -->
+    <div class="pronites" id="pronites_anchor">
+      <div class="pronites-header">
+        <h1><span data-aos="fade-down">PREVIOUS P</span><span data-aos="fade-up">RONITES</span></h1>
+      </div>
+      <div class="pronites-header-mob">
+        <h1>PRONITES</h1>
+      </div>
+      <div class="pronite-box">
+
+        <div class="pro-content">
+          <img class="slide" alt="Julia Bliss" src="./assets/juliabliss.jpeg">
+        </div>
+
+        <div class="pro-content">
+          <img class="slide" alt="Underground Authority" src="./assets/UndergroundAuthority.jpeg">
+        </div>
+
+        <div class="pro-content">
+          <img class="slide" alt="The Local Train" src="./assets/TheLocalTrain.webp">
+        </div>
+
+        <a id="previous" title="prev" class="arrow">&#10094</a>
+        <a id="next" title="next" class="arrow">&#10095</a>
+        <div id="text-bar">
+          <div id="pro-name">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!--sponsors-->
+
+    <!-- <div class="sponsor-body" id="sponsors_anchor">
+      <div class="sponsor-header">
+        <h1><span data-aos="fade-right">SPON</span><span data-aos="fade-left">SORS</span></h1>
+      </div>
+      <div class="sponsor-header-mob">
+        <h1>SPONSOR</h1>
+      </div>
+
+      <figure class="icon-cards">
+        <div class="icon-cards__content">
+          <div class="icon-cards__item">
+            <span class="h1"><img src="https://financeglad.com/wp-content/uploads/2019/09/state-bank-of-india-fund-transfer-online.jpg"
+                alt="SBI" /></span>
+          </div>
+          <div class="icon-cards__item">
+            <span class="h1"><img src="https://www.gizbot.com/img/600x10/img/2017/03/13-1489385588-fastrack.jpg"
+                alt="Fastrack" /></span>
+          </div>
+          <div class="icon-cards__item">
+            <span class="h1"><img src="https://www.pixelstalk.net/wp-content/uploads/2016/05/Samsung-Logo-HD-Wallpapers.png"
+                alt="Samsung" /></span>
+          </div>
+          <div class="icon-cards__item">
+            <span class="h1"><img src="http://static.dnaindia.com/sites/default/files/styles/full/public/2016/01/13/414204-indian-oil-corp.jpg"
+                alt="Indian Oil" /></span>
+          </div>
+          <div class="icon-cards__item">
+            <span class="h1"><img src="https://www.nigeriantoday.com/wp-content/uploads/2018/11/airtel-data-plans.jpg"
+                alt="Airtel" /></span>
+          </div>
+          <div class="icon-cards__item">
+            <span class="h1"><img src="https://www.mobileussdcodes.com/wp-content/uploads/2020/10/jio_logo.jpeg"
+                alt="Jio" /></span>
+          </div>
+          <div class="icon-cards__item">
+            <span class="h1"><img src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/news8015.jpg"
+                alt="BlackBerrys" /></span>
+          </div>
+          <div class="icon-cards__item">
+            <span class="h1"><img src="https://4.bp.blogspot.com/-s33GD_qpt-U/UPtXZvSXH0I/AAAAAAAAFQk/C-QyhkHfvTA/s1600/Logo+Motor+Honda.JPG"
+                alt="Honda" /></span>
+          </div>
+        </div>
+      </figure>
+    </div> -->
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content" id="contact_anchor">
+        <!-- <h3>Utthaan 2023</h3> -->
+        <img src="assets/utthaanlogo.png" style="width: 300px" alt="Utthaan">
+        <!-- <ul class="links">
+          <li><a href="./faqpage/">FAQ</i></a></li>
+        </ul> -->
+        <p>Contact us at : <a href="tel:+918578945722">+918578945722</a></p>
+        <p>Reach us at : <a href="mailto:utthaan@bitmesra.ac.in">utthaan@bitmesra.ac.in</a></p>
+        <ul class="socials">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Utthaan 2023 <span> BIT MESRA OFFCAMPUS DEOGHAR</span></p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- <div class="cursor"></div>
+    <div class="cursor-border"></div> -->
+
+  <script src="./script.js"></script>
+
+  <script src="./particles.js"></script>
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1500
+    });
+  </script>
+  <!-- <script src="./assets/pointer/pointer.js"></script> -->
+
+</body>
+
+</html>
